@@ -12,7 +12,7 @@ class Doctor
 
   def patients
       collection = []
-      Appointment.all.select{|appt| appt.doctor == self}.each do |appt|
+      appointments.each do |appt|
         collection << appt.patient
       end
       collection
