@@ -13,7 +13,7 @@ class Genre
 
   def artists
     collection = []
-    Song.all.select{|song| song.genre == self}.do |song|
+    Song.all.select{|song| song.genre == self}.each do |song|
       collection << song.artist
     end
     collection
