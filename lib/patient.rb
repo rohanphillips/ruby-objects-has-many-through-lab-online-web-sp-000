@@ -16,6 +16,13 @@ class Patient
     Appointment.all.select{|appt| appt.patient == self}
   end
 
+  def doctors
+    collection = []
+    appointments.each do |appt|
+      collection << appt.doctor
+    end
+  end
+
   def self.all
     @@all
   end
