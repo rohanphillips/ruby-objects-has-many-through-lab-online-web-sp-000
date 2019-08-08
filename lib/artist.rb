@@ -11,6 +11,7 @@ class Artist
   end
 
   def songs
+    binding.pry
     collection = Song.all.select{|song| song.artist == self}
     collection
   end
