@@ -21,6 +21,7 @@ class Patient
     appointments.each do |appt|
       collection << appt.doctor
     end
+    collection
   end
 
   def self.all
