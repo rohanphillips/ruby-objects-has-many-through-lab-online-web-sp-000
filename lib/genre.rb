@@ -1,4 +1,4 @@
-class Genre 
+class Genre
   @@all = []
 
   def initialize(genre_name)
